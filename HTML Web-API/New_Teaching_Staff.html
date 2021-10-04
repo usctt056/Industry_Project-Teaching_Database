@@ -32,76 +32,169 @@
 <center><img src="https://i.imgur.com/GrJSEiU.png"/></center>
 <center><img src="https://i.imgur.com/yabGSit.png"/></center>
 <!-- Buttons -->
-<center><h1>1. Title and name</h1>
-  <form action="/action_page.php"> <!-- This is where the php file location will go-->
-    <table> 
-      <!-- Title -->
-    <label for="title">Title:</label><br>
-      <input type="text" id="title" name="title" placeholder="Mr / Mrs / Ms"><br>
-      <!-- Names and stuff -->
-      <label for="f_name">First Name(s):</label><br>
-      <input type="text" id="f_name" name="f_name" placeholder="First Name(s)"><br>
-      <label for="l_name">Last Name:</label><br>
-      <input type="text" id="l_name" name="l_name" placeholder="Last Name"><br>
-      <label for="address">Address:</label><br>
-      <input type="text" id="address" name="address" placeholder="Address"><br>
-      <label for="email">Email:</label><br>
-      <input type="text" id="email" name="email" placeholder="Email Address"><br>
-      <label for="phone">Phone:</label><br>
-      <input type="text" id="phone" name="phone" placeholder="Phone"><br><br>
-      <!-- 2 Completed Academic Qualifications -->
-      <h1>2. Completed Academic Qualifications </h1>
-      <label for="Qual_id">Full name of award:</label><br>
-      <input type="text" id="Qual_id" name="Qual_id" placeholder="Award"><br>
-      <label for="Subject_area">Subject/major area:</label><br>
-      <input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"><br>
-      <label for="institution">Full name of awarding institution (if an overseas institution, also include the country and verification of legitimacy of the award and institution):</label><br>
-      <input type="text" id="institution" name="institution" placeholder="Institution"><br>
-      <label for="Year_awarded">Year Awarded:</label><br>
-      <input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"><br>
-      
-      
-      <br>
-      
-      <!-- 3 Teaching experience (previous seven years)-->
-      <h1>3. Teaching experience (previous seven years)</h1>
-      <label for="Teaching_period">Teaching Period (from most recent):</label><br>
-      <input type="text" id="Teaching_period" name="Teaching_period" placeholder="Teaching Period"><br>
-      <label for="Courses_taught">Field of study area/course title:</label><br>
-      <input type="text" id="Courses_taught" name="Courses_taught" placeholder="Field"><br>
-      <label for="Org_name">Name of organisation/institution and, if an overseas instidution, the country:</label><br>
-      <input type="text" id="Org_name" name="Org_name" placeholder="Organisation"><br>
-      <label for="Role_in_course">Role - Course coordinator, lecturer, tutor, instructor, teaching assistant, marker, facilitator:</label><br>
-      <input type="text" id="Role_in_course" name="Role_in_course" placeholder="Role"><br>
-      
-      
-      <br>
-      <!-- 4 Relevant employment/experience  -->
-      <h1>4. Relevant employment/experience</h1>
-      <label for="fname">Employment Period:</label><br>
-      <input type="text" id="lname" name="lname" placeholder="Employmnt Period"><br>
-      <label for="fname">FTE (full-time/part-time/casual):</label><br>
-      <input type="text" id="lname" name="lname" placeholder="FTE"><br>
-      <label for="fname">Name of employer:</label><br>
-      <input type="text" id="lname" name="lname" placeholder="Employer"><br>
-      <label for="Position">Position title:</label><br>
-      <input type="text" id="Position" name="Position" placeholder="Title"><br>
-      <label for="Duties">Relevant duties:</label><br>
-      <input type="text" id="Duties" name="Duties" placeholder="Duties"><br><br>
 
-      <!-- 5. Other relevant information (including professional and/or honorary memberships, directorships and related scholarly activities) -->
-      <h1>5. Other relevant information (including professional and/or honorary memberships, directorships and related scholarly activities)</h1>
-      <label for="fname"> </label><br>
-      <input type="text" id="lname" name="lname" placeholder="Enter text here"><br><br>
+<center>
+      <!-- testing area-->
+    <form action="/action_page.php"> <!-- This is where the php file location will go-->
+      <table>
+        <tr>
+          <td colspan="3">
+              <h1>1. Title and name</h1>
+          </td>
+        </tr>
+        <tr>
+          <th>Title</th>
+          <th>First and other names</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="title" name="title" placeholder="Mr / Mrs / Ms"></td>
+          <td><input type="text" id="f_name" name="f_name" placeholder="First Name(s)"></td>
+          <td><input type="text" id="l_name" name="l_name" placeholder="Last Name"></td>
+          <td><input type="text" id="address" name="address" placeholder="Address"></td>
+          <td><input type="text" id="email" name="email" placeholder="Email Address"></td>
+          <td><input type="text" id="phone" name="phone" placeholder="Phone"></td>
+        </tr>
+        <!-- 2. Completed academic qualifications  -->
+        <tr>
+          <td colspan="3">
+              <h1>2. Completed academic qualifications</h1>
+          </td>
+        </tr>
+        <tr>
+          <th>Full name of award</th>
+          <th>Subject/major area</th>
+          <th>Full name of awarding institution</th>
+          <th>Year Awarded</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
+          <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
+          <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
+          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
+          <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
+          <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
+          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
+          <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
+          <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
+          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
+          <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
+          <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
+          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
+        </tr>
+        <!-- 3. Teaching experience (previous seven years)  -->
+        <tr>
+          <td colspan="3">
+              <h1>3. Teaching experience (previous seven years)</h1>
+          </td>
+        </tr>
+        <tr>
+          <th>Teaching period</th>
+          <th>Field of study <br>area/course title</th>
+          <th>Name of organisation/<br>institution</th>
+          <th>Role</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="Teaching_period" name="Teaching_period" placeholder="Teaching Period"></td>
+          <td><input type="text" id="Courses_taught" name="Courses_taught" placeholder="Field"></td>
+          <td><input type="text" id="Org_name" name="Org_name" placeholder="Organisation"></td>
+          <td><input type="text" id="Role_in_course" name="Role_in_course" placeholder="Role"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Teaching_period" name="Teaching_period" placeholder="Teaching Period"></td>
+          <td><input type="text" id="Courses_taught" name="Courses_taught" placeholder="Field"></td>
+          <td><input type="text" id="Org_name" name="Org_name" placeholder="Organisation"></td>
+          <td><input type="text" id="Role_in_course" name="Role_in_course" placeholder="Role"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Teaching_period" name="Teaching_period" placeholder="Teaching Period"></td>
+          <td><input type="text" id="Courses_taught" name="Courses_taught" placeholder="Field"></td>
+          <td><input type="text" id="Org_name" name="Org_name" placeholder="Organisation"></td>
+          <td><input type="text" id="Role_in_course" name="Role_in_course" placeholder="Role"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Teaching_period" name="Teaching_period" placeholder="Teaching Period"></td>
+          <td><input type="text" id="Courses_taught" name="Courses_taught" placeholder="Field"></td>
+          <td><input type="text" id="Org_name" name="Org_name" placeholder="Organisation"></td>
+          <td><input type="text" id="Role_in_course" name="Role_in_course" placeholder="Role"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Teaching_period" name="Teaching_period" placeholder="Teaching Period"></td>
+          <td><input type="text" id="Courses_taught" name="Courses_taught" placeholder="Field"></td>
+          <td><input type="text" id="Org_name" name="Org_name" placeholder="Organisation"></td>
+          <td><input type="text" id="Role_in_course" name="Role_in_course" placeholder="Role"></td>
+        </tr>
+        <!-- 4. Relevant employment/experience  -->
+        <tr>
+          <td colspan="9">
+              <h1>4. Relevant employment/experience</h1>
+          </td>
+        </tr>
+        <tr>
+          <th>Employment period</th>
+          <th>FTE (Full-time/part-time/casual)</th>
+          <th>Name of employer</th>
+          <th>Position title</th>
+          <th>Relevant duties</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="lname" name="lname" placeholder="Employmnt Period"></td>
+          <td><input type="text" id="lname" name="lname" placeholder="FTE"></td>
+          <td><input type="text" id="lname" name="lname" placeholder="Employer"></td>
+          <td><input type="text" id="Pos_title" name="Pos_title" placeholder="Title"></td>
+          <td><input type="text" id="Duties" name="Duties" placeholder="Duties"></td>
+        </tr>
+        <!-- 5. Other relevant information (including professional and/or honorary memberships, directorships and related scholarly activities)  -->
+        <tr>
+          <td colspan="99">
+              <h1>5. Other relevant information (including professional and/or <br>honorary memberships, directorships and related scholarly activities)</h1>
+          </td>
+        </tr>
+        <tr>
+          <th>Other relevant information</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="lname" name="lname" placeholder="Enter text here"></td>
+        </tr>
+        <!-- 5. Other relevant information (including professional and/or honorary memberships, directorships and related scholarly activities)  -->
+        <tr>
+          <th>Author(s)</th>
+          <th>Year of publication</th>
+          <th>Title of publication</th>
+          <th>Journal/volume/proceedings</th>
+          <th>Type of publication (1)</th>
+          <th>Peer-refereed/reviewed (2)</th>
+          <th>Research classification (3)</th>
+          <th>Broad field of education (4)</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="lname" name="lname" placeholder="Author"></td>
+          <td><input type="text" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
+          <td><input type="text" id="Title_of_pub" name="Title_of_pub" placeholder="Title"></td>
+          <td><input type="text" id="Pos_title" name="Pos_title" placeholder="Name of journal"></td>
+          <td><input type="text" id="Duties" name="Duties" placeholder="Journal, book etc."></td>
+          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No"></td>
+          <td><input type="text" id="Research_class" name="Research_Class" placeholder="Research of Scholarship"></td>
+          <td><input type="text" id="Duties" name="Duties" placeholder="Discipline area (only 1 area)"></td>
+        </tr>
 
-      <!-- 6. Publications (scholarship and research outputs)  -->
-      <h1>6. Publications (scholarship and research outputs) </h1>
 
-      
-      <br>
-      <!-- Submit Button -->
-      <input type="submit" value="Submit">
-      
+
+        <br>
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
       </table>
     </form> 
     
