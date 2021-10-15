@@ -51,12 +51,12 @@
           <th>Phone</th>
         </tr>
         <tr>
-          <td><input type="text" id="title" name="title" placeholder="Mr / Mrs / Ms"></td>
-          <td><input type="text" id="f_name" name="f_name" placeholder="First Name(s)"></td>
-          <td><input type="text" id="l_name" name="l_name" placeholder="Last Name"></td>
-          <td><input type="text" id="address" name="address" placeholder="Address"></td>
-          <td><input type="text" id="email" name="email" placeholder="Email Address"></td>
-          <td><input type="text" id="phone" name="phone" placeholder="Phone"></td>
+          <td><input type="text" id="title" name="title" maxlength="4" placeholder="Mr / Mrs / Ms"></td>
+          <td><input type="text" id="f_name" name="f_name" placeholder="First Name(s)" required></td>
+          <td><input type="text" id="l_name" name="l_name" placeholder="Last Name" required></td>
+          <td><input type="text" id="address" name="address" placeholder="Address" required></td>
+          <td><input type="text" id="email" name="email" placeholder="Email Address" required></td>
+          <td><input type="number" id="phone" name="phone" maxlength="12" placeholder="Phone" required></td>
         </tr>
         <!-- 2. Completed academic qualifications  -->
         <tr>
@@ -75,34 +75,35 @@
           <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
           <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
           <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
-          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
-          <td><input type="text" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
+          <td><input type="number" id="Year_awarded" name="Year_awarded" maxlength="4" placeholder="Year"></td>
+          <td><input type="number" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
         </tr>
         <tr>
           <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
           <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
           <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
-          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
-          <td><input type="text" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
+          <td><input type="number" id="Year_awarded" name="Year_awarded" maxlength="4" placeholder="Year"></td>
+          <td><input type="number" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
         </tr>
         <tr>
           <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
           <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
           <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
-          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
-          <td><input type="text" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
+          <td><input type="number" id="Year_awarded" name="Year_awarded" maxlength="4" placeholder="Year"></td>
+          <td><input type="number" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
         </tr>
         <tr>
           <td><input type="text" id="Qual_id" name="Qual_id" placeholder="Award"></td>
           <td><input type="text" id="Subject_area" name="Subject_area" placeholder="Subject/major"></td>
           <td><input type="text" id="institution" name="institution" placeholder="Institution"></td>
-          <td><input type="text" id="Year_awarded" name="Year_awarded" placeholder="Year"></td>
-          <td><input type="text" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
+          <td><input type="number" id="Year_awarded" name="Year_awarded" maxlength="4" placeholder="Year"></td>
+          <td><input type="number" id="AQF_id" name="AQF_id" placeholder="AQF Level"></td>
         </tr>
         <!-- 3. Teaching experience (previous seven years)  -->
         <tr>
           <td colspan="3">
-              <h1>3. Teaching experience (previous seven years)</h1>
+              <h1>3. Teaching experience</h1>
+              <p>(Top 5 within the last 7 years)</p>
           </td>
         </tr>
         <tr>
@@ -145,6 +146,7 @@
         <tr>
           <td colspan="9">
               <h1>4. Relevant employment/experience</h1>
+              <p>(Top 5, extra information can be inserted into section 7)</p>
           </td>
         </tr>
         <tr>
@@ -192,12 +194,13 @@
           <th>Other relevant information</th>
         </tr>
         <tr>
-          <td><input type="text" id="Other_info" name="Other_info" placeholder="Enter text here"></td>
+          <td><input type="text" id="Other_info" name="Other_info" placeholder="Enter text here" size="25"></td>
         </tr>
         <!-- 6. Publications (scholarship and research outputs)  -->
         <tr>
           <td colspan="9">
               <h1>6. Publications (scholarship and research outputs)</h1>
+              <p>(Top 5 publications)</p>
           </td>
         </tr>
         <tr>
@@ -212,41 +215,51 @@
         </tr>
         <tr>
           <td><input type="text" id="Author" name="Author" placeholder="Author"></td>
-          <td><input type="text" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
+          <td><input type="number" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
           <td><input type="text" id="Title_of_pub" name="Title_of_pub" placeholder="Title"></td>
           <td><input type="text" id="Volume" name="Volume" placeholder="Name of journal"></td>
           <td><input type="text" id="Type_of_pub" name="Type_of_pub" placeholder="Journal, book etc."></td>
-          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No"></td>
+          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No" maxlength="3"></td>
           <td><input type="text" id="Research_class" name="Research_Class" placeholder="Research of Scholarship"></td>
           <td><input type="text" id="Field_of_edu" name="Field_of_edu" placeholder="Discipline area (only 1 area)"></td>
         </tr>
         <tr>
           <td><input type="text" id="Author" name="Author" placeholder="Author"></td>
-          <td><input type="text" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
+          <td><input type="number" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
           <td><input type="text" id="Title_of_pub" name="Title_of_pub" placeholder="Title"></td>
           <td><input type="text" id="Volume" name="Volume" placeholder="Name of journal"></td>
           <td><input type="text" id="Type_of_pub" name="Type_of_pub" placeholder="Journal, book etc."></td>
-          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No"></td>
+          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No" maxlength="3"></td>
           <td><input type="text" id="Research_class" name="Research_Class" placeholder="Research of Scholarship"></td>
           <td><input type="text" id="Field_of_edu" name="Field_of_edu" placeholder="Discipline area (only 1 area)"></td>
         </tr>
         <tr>
           <td><input type="text" id="Author" name="Author" placeholder="Author"></td>
-          <td><input type="text" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
+          <td><input type="number" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
           <td><input type="text" id="Title_of_pub" name="Title_of_pub" placeholder="Title"></td>
           <td><input type="text" id="Volume" name="Volume" placeholder="Name of journal"></td>
           <td><input type="text" id="Type_of_pub" name="Type_of_pub" placeholder="Journal, book etc."></td>
-          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No"></td>
+          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No" maxlength="3"></td>
           <td><input type="text" id="Research_class" name="Research_Class" placeholder="Research of Scholarship"></td>
           <td><input type="text" id="Field_of_edu" name="Field_of_edu" placeholder="Discipline area (only 1 area)"></td>
         </tr>
         <tr>
           <td><input type="text" id="Author" name="Author" placeholder="Author"></td>
-          <td><input type="text" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
+          <td><input type="number" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
           <td><input type="text" id="Title_of_pub" name="Title_of_pub" placeholder="Title"></td>
           <td><input type="text" id="Volume" name="Volume" placeholder="Name of journal"></td>
           <td><input type="text" id="Type_of_pub" name="Type_of_pub" placeholder="Journal, book etc."></td>
-          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No"></td>
+          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No" maxlength="3"></td>
+          <td><input type="text" id="Research_class" name="Research_Class" placeholder="Research of Scholarship"></td>
+          <td><input type="text" id="Field_of_edu" name="Field_of_edu" placeholder="Discipline area (only 1 area)"></td>
+        </tr>
+        <tr>
+          <td><input type="text" id="Author" name="Author" placeholder="Author"></td>
+          <td><input type="number" id="Year_of_pub" name="Year_of_pub" placeholder="Year"></td>
+          <td><input type="text" id="Title_of_pub" name="Title_of_pub" placeholder="Title"></td>
+          <td><input type="text" id="Volume" name="Volume" placeholder="Name of journal"></td>
+          <td><input type="text" id="Type_of_pub" name="Type_of_pub" placeholder="Journal, book etc."></td>
+          <td><input type="text" id="Peer_reviewed" name="Peer_reviewed" placeholder="Yes/No" maxlength="3"></td>
           <td><input type="text" id="Research_class" name="Research_Class" placeholder="Research of Scholarship"></td>
           <td><input type="text" id="Field_of_edu" name="Field_of_edu" placeholder="Discipline area (only 1 area)"></td>
         </tr>
