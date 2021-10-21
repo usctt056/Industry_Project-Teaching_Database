@@ -16,6 +16,8 @@
     
     </style>
     </head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <body>
     
     <div class="container">
@@ -23,6 +25,41 @@
       <div class="topleft"><a href="Home_Page.html"> Home Page </a>> <a href="Teaching_Staff_Portal.html">Teaching Staff Portal </a>> New Teaching Staff</div>
     </div>
 <!-- Background -->
+
+<script>
+(function($) {
+  $(document).on('ready', function() {
+    $("#submitButton").on('click', function(e) {
+      //This is where you construct the data you would like to save
+      var fileDataToSave = $("#form1").serialize();
+      var $downloadAnchor = $("<a/>", {
+        href: 'data:text/plain;charset=UTF-8,' + fileDataToSave,
+        download: "HelloWorld.xml"
+      });
+      $downloadAnchor.text("Click me to download XML");
+      $("body").append($downloadAnchor);
+       e.preventDefault();
+    });
+
+  });
+})(jQuery);
+
+</script>
+<script>
+$(document).ready(function(){
+            $("#submit").click(function(){
+                $.ajax( {
+                url: "http://localhost:8080/books?booksXML=" + myxml,
+                method: "get",
+                dataType: "text" // force the returned result as a string for printing
+            })
+                 .done( function(msg) {
+                 });
+
+            });
+        });
+
+</script>
 
 <!-- Title -->
 <head>
@@ -35,7 +72,7 @@
 
 <center>
       <!-- testing area-->
-    <form action="/action_page.py" method="POST"> <!-- This is where the php file location will go-->
+    <form id="form1">
       <table>
         <tr>
           <td colspan="3">
@@ -62,7 +99,7 @@
         <tr>
           <td colspan="3">
               <h1>2. Completed academic qualifications</h1>
-              <p>(Top 5, extra relevant information can be inserted into sectoin 5)</p>
+              <p>(Top 5, extra relevant information can be inserted into section 5)</p>
           </td>
         </tr>
         <tr>
@@ -289,7 +326,8 @@
         <tr>
           <td colspan="9">
             <br><br>
-            <center><input type="submit" value="Submit"></center>
+            <!-- <center><input type="submit" value="Submit"></center> OLD SUBMIT BUTTON-->
+            <center><button id="submitButton">Submit Form</button></center>
           </td>
         </tr>
       </table>
