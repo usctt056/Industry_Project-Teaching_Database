@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Background -->
+<meta http-equiv="Access-Control-Allow-Origin" content="*"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+            $("#viewApproval").click(function(){
+                $.ajax( {
+                url: "http://172.23.20.81:80/adminViewAppRecord",
+                method: "get",
+                dataType: "text" // force the returned result as a string for printing
+            })
+                 window.alert("Retrieving Approvals.")
+                 .done( function(msg) {
+                 });
+
+            });
+
+        });
+  $(document).ready(function(){
+            $("#viewReview").click(function(){
+                $.ajax( {
+                url: "http://172.23.20.81:80/adminViewRevRecord",
+                method: "get",
+                dataType: "text" // force the returned result as a string for printing
+            })
+                 window.alert("Retrieving Reviews.")
+                 .done( function(msg) {
+                 });
+
+            });
+
+        });
+  $(document).ready(function(){
+            $("#viewAQF").click(function(){
+                $.ajax( {
+                url: "http://172.23.20.81:80/adminViewAqfRecord",
+                method: "get",
+                dataType: "text" // force the returned result as a string for printing
+            })
+                 window.alert("Retrieving AQL levels.")
+                 .done( function(msg) {
+                 });
+
+            });
+
+        });
+$(document).ready(function(){
+            $("#viewStaff").click(function(){
+                $.ajax( {
+                url: "http://172.23.20.81:80/viewStaffRecord",
+                method: "get",
+                dataType: "text" // force the returned result as a string for printing
+            })
+                 window.alert("Retrieving Staff Records.")
+                 .done( function(msg) {
+                 });
+
+            });
+
+        });
+</script>
+
+
+<!-- Testing Navigator-->
+<style>
+
+    .button {
+      background-color: lightgray;
+      border: thick;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    .link {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      font-size: 18px;
+      background-color: lightgray;
+      border: thick;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    </style>
+    </head>
+
+<!-- Title -->
+<title>Admin Portal 2</title>
+
+<body>
+<center><img src="https://i.imgur.com/GrJSEiU.png"/></center>
+<center><img src="https://i.imgur.com/6BxZHQt.png"/></center>
+</br>
+</br>
+
+<!-- Buttons -->
+<center>
+
+<h3>View Staff Details</h3>
+<a href="staffRecords.html"><button type="button" id="viewStaff" class="button">View Records</button></a><br><br>
+<a href="staffDelete.html"><button type="button" class="button">Delete Staff</button></a><br><br><br><br>
+
+<h3>View AQF</h3>
+<a href="aqfRecords.html"><button type="button" id="viewAQF" class="button">View AQF Level</button></a><br><br><br><br>
+
+<h3>Enter or View Approval</h3>
+<a href="adminApp.html"><button type="button" id="viewAppButton" class="button">Enter Approval</button></a><br><br>
+<a href="approvalRecords.html"><button type="button" id="viewApproval" class="button">View Approvals</button></a><br><br>
+<a href="approvalDelete.html"><button type="button" id="deleteAppButton" class="button">Delete Approval</button></a><br><br><br><br>
+
+<h3>Enter or View Review</h3>
+<a href="adminRev.html"><button type="button" id="viewRevButton" class="button">Enter Review</button></a><br><br>
+<a href="reviewRecords.html"><button type="button" id="viewReview" class="button">View Reviews</button></a><br><br>
+<a href="reviewDelete.html"><button type="button" id="deleteRevButton" class="button">Delete Review</button></a><br><br><br><br>
+
+<!-- Back button -->
+<a href="Admin_Portal.html"><button type="button" class="button">BACK</button></a>
+
+</center>
+</body>
+</html>
