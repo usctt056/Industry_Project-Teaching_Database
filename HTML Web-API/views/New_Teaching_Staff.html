@@ -152,7 +152,11 @@
         </tr>
 
         <tr>
-            <td width="(100/x)%"><input type="text" id="titlestaff" name="title" placeholder="Mr/Mrs/Ms" maxlength="3" required></td>
+            <td width="(100/x)%"><select name="staffTitle" id="titlestaff">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+            </select></td>
             <td width="(100/x)%"><input type="text" id="fnamestaff" name="fname" placeholder="First Name" maxlength="20" required></td>
             <td width="(100/x)%"><input type="text" id="lnamestaff" name="lname" placeholder="Last Name" maxlength="20" required></td>
             <td width="(100/x)%"><input type="text" id="addressstaff" name="address" placeholder="Address" maxlength="50" required></td>
@@ -162,7 +166,7 @@
     </table><br><br>
 
     <h2>Qualification Details</h2>
-    <p>Please fill in your qualification details through the form below:</p>
+    <p>Please fill in your highest completed qualification below:</p>
 
     <table width="61%">
         <tr>
@@ -181,7 +185,7 @@
     </table><br><br>
 
     <h2>Teaching Experience</h2>
-    <p>Please fill in your previous teaching experience in the past seven (7) years through the form below:</p>
+    <p>Please fill in your most recent teaching experience through the form below:</p>
 
     <table width="61%">
         <tr>
@@ -200,7 +204,7 @@
     </table><br><br>
 
     <h2>Relevent Employment/Experience</h2>
-    <p>Provide a brief history of the employment and/or other experience below:</p>
+    <p>Please provide your most recent employment experience below:</p>
 
     <table width="61%">
         <tr>
@@ -213,7 +217,11 @@
 
         <tr>
             <td width="(100/x)%"><input type="text" id="empperiod" name="empperiod" placeholder="Period of Employment" maxlength="60" required></td>
-            <td width="(100/x)%"><input type="text" id="fte" name="fte" placeholder="Full-time/Part-time/Casual" maxlength="60" required></td>
+            <td width="(100/x)%"><select name="fteinfo" id="fte">
+                <option value="Full-Time">Full-Time</option>
+                <option value="Part-Time">Part-Time</option>
+                <option value="Casual">Casual</option>
+            </select></td>
             <td width="(100/x)%"><input type="text" id="employer" name="employer" placeholder="Name of Employer" maxlength="60" required></td>
             <td width="(100/x)%"><input type="text" id="postitle" name="postitle" placeholder="Title of position" maxlength="60" required></td>
             <td width="(100/x)%"><input type="text" id="duties" name="duties" placeholder="Duties or Role" maxlength="60" required></td>
@@ -221,7 +229,7 @@
     </table><br><br>
 
     <h2>Other Relevant Information</h2>
-    <p>Provide a brief history of other relevant information below:</p>
+    <p>Please provide us with any other information you believe is relevant (other qualifications, teaching/employment experience):</p>
 
     <table width="61%">
         <tr>
@@ -234,7 +242,7 @@
     </table><br><br>
 
     <h2>Publications</h2>
-    <p>Please fill in your publications below:</p>
+    <p>Please fill in your top/most recent publication below:</p>
 
     <table width="61%">
         <tr>
@@ -254,8 +262,14 @@
             <td width="(100/x)%"><input type="text" id="titleofpub" name="titlepub" placeholder="Title of Publication" maxlength="60" required></td>
             <td width="(100/x)%"><input type="text" id="jourvolpro" name="jvp" placeholder="Journal/Volume/Proceedings." maxlength="60" required></td>
             <td width="(100/x)%"><input type="text" id="typeofpub" name="typepub" placeholder="Type of publication" maxlength="60" required></td>
-            <td width="(100/x)%"><input type="text" id="peerorrev" name="peerrevpub" placeholder="Peer refered or Reviewed" maxlength="60" required></td>
-            <td width="(100/x)%"><input type="text" id="resclass" name="resclass" placeholder="Research Classification of Publication" maxlength="60" required></td>
+            <td width="(100/x)%"><select name="yesNo" id="peerorrev">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select></td>
+            <td width="(100/x)%"><select name="ResScho" id="resclass">
+                <option value="Research">Research</option>
+                <option value="Scholarship">Scholarship</option>
+            </select></td>
             <td width="(100/x)%"><input type="text" id="fieldofedu" name="fieldedu" placeholder="Broad Field of Education" maxlength="60" required></td>
         </tr>
     </table><br><br>
